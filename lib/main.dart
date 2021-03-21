@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MySecondWidget(),
     );
   }
 }
@@ -108,6 +108,39 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class MyFirstWidget extends StatelessWidget {
+  int count = 0;
+  @override
+  Widget build(BuildContext context) {
+    count++;
+    print(count);
+    return Container(
+      child: Center(
+        child: Text('Hello'),
+      ),
+    );
+  }
+}
+
+class MySecondWidget extends StatefulWidget {
+  @override
+  _MySecondWidgetState createState() => _MySecondWidgetState();
+}
+
+class _MySecondWidgetState extends State<MySecondWidget> {
+  int count = 0;
+  @override
+  Widget build(BuildContext context) {
+    count++;
+    print(count);
+    return Container(
+      child: Center(
+        child: Text('Hello'),
+      ),
     );
   }
 }

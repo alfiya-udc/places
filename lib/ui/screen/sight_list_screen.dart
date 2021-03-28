@@ -10,25 +10,24 @@ class _SightListScreenState extends State<SightListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
-        title: Text('Places'),
-        backgroundColor: Colors.purple,
-      ),
-      body: Center(
-        child: Text('Список интересных мест'),
-      ),
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.purple,
-        child: Text('BottomAppBar'),
-      ),
-      bottomSheet: Text('bottomSheet'),
-      drawer: Center(
-        child: Text('drawer'),
-      ),
-      floatingActionButton: IconButton(
-        icon: Icon(Icons.add),
-        color: Colors.purple,
-        onPressed: () => {},
+        centerTitle: false,
+        titleSpacing: 0,
+        title: Padding(
+          padding: EdgeInsets.fromLTRB(16.0, 64.0, 16.0, 21.0),
+          child: RichText(
+              text: TextSpan(
+              children: <TextSpan>[TextSpan(text: 'С', style: TextStyle(color: Color(0xFF4CAF50),),), TextSpan(text: 'писок'), TextSpan(text: '\n\nИ', style: TextStyle(color: Colors.yellow) ), TextSpan(text: 'нтересных мест', )],
+              style: TextStyle(
+            fontFamily: 'Roboto',
+            fontSize: 32,
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+              ),
+          ), textAlign: TextAlign.left),
+        ),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        toolbarHeight: 157.0,
       ),
     );
   }

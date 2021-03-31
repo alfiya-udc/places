@@ -15,20 +15,32 @@ class _SightListScreenState extends State<SightListScreen> {
         title: Padding(
           padding: EdgeInsets.fromLTRB(16.0, 64.0, 16.0, 21.0),
           child: RichText(
-              text: TextSpan(
+            text: TextSpan(
               children: [
-                TextSpan(text: 'С', style: TextStyle(color: Color(0xFF4CAF50),),),
+                TextSpan(
+                  text: 'С',
+                  style: TextStyle(
+                    color: Color(0xFF4CAF50),
+                  ),
+                ),
                 TextSpan(text: 'писок'),
-                TextSpan(text: '\n\nи', style: TextStyle(color: Colors.yellow,),),
-                TextSpan(text: 'нтересных мест', )
+                TextSpan(
+                  text: '\n\nи',
+                  style: TextStyle(
+                    color: Colors.yellow,
+                  ),
+                ),
+                TextSpan(
+                  text: 'нтересных мест',
+                )
               ],
               style: TextStyle(
-            fontFamily: 'Roboto',
-            fontSize: 32,
-            fontWeight: FontWeight.bold,
-            color: Colors.black,
+                fontFamily: 'Roboto',
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
               ),
-          ),
+            ),
             textAlign: TextAlign.left,
           ),
         ),

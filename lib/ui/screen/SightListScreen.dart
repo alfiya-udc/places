@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:places/domain/mocks.dart';
+import 'package:places/theme/textStyles.dart';
 import 'package:places/ui/screen/SightCard.dart';
 
 class SightListScreen extends StatefulWidget {
@@ -25,13 +26,7 @@ class _SightListScreenState extends State<SightListScreen> {
           padding: EdgeInsets.fromLTRB(16, 64, 16, 16),
           child: Text(
             'Список\n\nинтересных мест',
-            style: TextStyle(
-              fontFamily: 'Roboto',
-              fontSize: 32,
-              color: Color(0xFF3B3E5B),
-              fontWeight: FontWeight.bold,
-              height: 1.05,
-            ),
+            style: appbarStyle,
           ),
         ),
         backgroundColor: Colors.transparent,

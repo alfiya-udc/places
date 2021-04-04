@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:places/domain/sight.dart';
 
-final List mocks = [
+final List<Sight> mocks = [
   Sight(
     name: 'Kazan',
     lat: 1.0,

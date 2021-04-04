@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:places/domain/sight.dart';
+import 'package:places/theme/textStyles.dart';
+import 'package:places/theme/colors.dart';
 
 class SightCard extends StatelessWidget {
   SightCard({@required this.sight});
@@ -24,7 +26,7 @@ class SightCard extends StatelessWidget {
               height: 92,
               padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Color(0xFFF5F5F5),
+                color: lightGrey,
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(16),
                   bottomRight: Radius.circular(16),
@@ -37,12 +39,7 @@ class SightCard extends StatelessWidget {
                   Text(
                     sight.name,
                     maxLines: 2,
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF3B3E5B),
-                    ),
+                    style: cardTitleStyle,
                   ),
                   SizedBox(
                     height: 2,
@@ -51,11 +48,7 @@ class SightCard extends StatelessWidget {
                     sight.details,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                      fontFamily: 'Roboto',
-                      fontSize: 14,
-                      color: Color(0xFF7C7E92),
-                    ),
+                    style: cardTitleDetails,
                   ),
                 ],
               )),

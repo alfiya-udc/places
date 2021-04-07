@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:places/domain/sight.dart';
-import 'package:places/theme/textStyles.dart';
 import 'package:places/theme/colors.dart';
+import 'package:places/theme/textStyles.dart';
 
 class SightDetails extends StatelessWidget {
   SightDetails({required this.sight});
@@ -18,7 +18,17 @@ class SightDetails extends StatelessWidget {
               flex: 1,
               child: Container(
                 width: double.infinity,
-                color: Colors.deepPurpleAccent,
+                color: lightGrey,
+                child: Image.network(
+                  sight.url,
+                  fit: BoxFit.cover,
+                  loadingBuilder: (context, child, loadingProgress) {
+                    if (loadingProgress == null) return child;
+                    return Center(
+                      child: CircularProgressIndicator(),
+                    );
+                  },
+                ),
               ),
             ),
             Expanded(

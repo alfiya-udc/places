@@ -3,9 +3,9 @@ import 'package:flutter/painting.dart';
 import 'colors.dart';
 
 TextStyle _text = const TextStyle(
-      fontFamily: 'Roboto',
-    ),
-    appbarStyle = _text.copyWith(
+  fontFamily: 'Roboto',
+);
+final appbarStyle = _text.copyWith(
       fontSize: 32,
       color: textSecondary,
       fontWeight: FontWeight.bold,

@@ -4,7 +4,7 @@ import 'package:places/theme/textStyles.dart';
 import 'package:places/theme/colors.dart';
 
 class SightDetails extends StatelessWidget {
-  SightDetails({@required this.sight});
+  SightDetails({required this.sight});
 
   final Sight sight;
 
@@ -90,7 +90,7 @@ class SightDetails extends StatelessWidget {
 
 class SightDetailsHeader extends StatelessWidget {
   SightDetailsHeader(
-      {@required this.title, @required this.type, this.workTime = '9.00'});
+      {required this.title, required this.type, this.workTime = '9.00'});
   final String title;
   final String type;
   final String workTime;

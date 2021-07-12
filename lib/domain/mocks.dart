@@ -10,6 +10,8 @@ final List<Sight> mocks = [
     details:
         'kazan details kazan details kazan details kazan details kazan details kazan details kazan details kazan details kazan details kazan details kazan details kazan details kazan details kazan details kazan details kazan details kazan details kazan details kazan details kazan details',
     type: 'city',
+    workTime: '9.00',
+    toVisit: '12 окт 2020',
   ),
   Sight(
     name: 'Tomsk Tomsk Tomsk Tomsk Tomsk Tomsk Tomsk Tomsk Tomsk',
@@ -19,6 +21,8 @@ final List<Sight> mocks = [
     details:
         'Tomsk details Tomsk details Tomsk details Tomsk details Tomsk details Tomsk details Tomsk details Tomsk details Tomsk details',
     type: 'city',
+    workTime: '9.00',
+    toVisit: '12 окт 2020',
   ),
   Sight(
     name: 'Sochi',
@@ -28,6 +32,8 @@ final List<Sight> mocks = [
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFyXTdRspTNKxgh0srpPkznffCB93GkHl0PA&usqp=CAU',
     details: 'Sochi details',
     type: 'city',
+    workTime: '9.00',
+    toVisit: '12 окт 2020',
   ),
   Sight(
     name: 'Riga',
@@ -37,5 +43,11 @@ final List<Sight> mocks = [
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8cpEOXQ9En4JM15KhkRF1HHhpH9Q3uv65w&usqp=CAU',
     details: 'Riga details',
     type: 'city',
+    workTime: '9.00',
+    toVisit: '12 окт 2020',
   ),
 ];
+
+final List<Sight> mocksToVisit = [mocks[0], mocks[1]];
+
+final List<Sight> mocksVisited = [mocks[2], mocks[3]];

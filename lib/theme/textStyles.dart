@@ -5,7 +5,7 @@ import 'colors.dart';
 TextStyle _text = const TextStyle(
   fontFamily: 'Roboto',
 );
-final appbarStyle = _text.copyWith(
+final homeAppbarStyle = _text.copyWith(
       fontSize: 32,
       color: textSecondary,
       fontWeight: FontWeight.bold,
@@ -37,4 +37,30 @@ final appbarStyle = _text.copyWith(
     workTimeStyle = _text.copyWith(
       fontSize: 14,
       color: textSecondary2,
+    ),
+    typeTagStyle = _text.copyWith(
+      fontSize: 14,
+      fontWeight: FontWeight.bold,
+      color: white,
+    ),
+    toVisitStyle = _text.copyWith(
+      fontSize: 14,
+      color: green,
+    ),
+    subtitleStyle = _text.copyWith(
+      fontSize: 18,
+      color: textSecondary3,
+      fontWeight: FontWeight.w500,
+      height: 1.05,
+    ),
+    bottomOptionStyle =
+        _text.copyWith(fontSize: 30, fontWeight: FontWeight.bold),
+    emptyStyleTitle = _text.copyWith(
+      fontSize: 18,
+      color: inactiveBlack,
+      fontWeight: FontWeight.w500,
+    ),
+    emptyStyleText = _text.copyWith(
+      fontSize: 14,
+      color: inactiveBlack,
     );

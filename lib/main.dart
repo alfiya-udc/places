@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:places/ui/screen/FavoritesScreen/FavoritesScreen.dart';
+import 'package:places/ui/screen/HomeScreen.dart';
+import 'package:places/ui/screen/PlacesListScreen.dart';
 import 'package:places/ui/screen/SightDetails.dart';
 import 'package:places/ui/screen/SightListScreen.dart';
 
@@ -26,9 +29,11 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: SightDetails(
-        sight: mocks[0],
-      ),
+      home: HomeScreen(),
+      // home: SightDetails(
+      //   sight: mocks[0],
+      // ),
+      // home: FavoritesTab(),
     );
   }
 }

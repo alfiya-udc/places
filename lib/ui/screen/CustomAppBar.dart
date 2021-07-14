@@ -18,7 +18,7 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
         padding: EdgeInsets.fromLTRB(16, 64, 16, 16),
         child: Text(
           title,
-          style: appbarStyle,
+          style: homeAppbarStyle,
         ),
       ),
     );

@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class Sight {
   final String name;
   final double lat;
@@ -9,6 +7,7 @@ class Sight {
   final String type;
   final String workTime;
   final String toVisit;
+
   Sight({
     required this.name,
     required this.lat,

@@ -81,7 +81,7 @@ class SightCard extends StatelessWidget {
                 minHeight: 92,
                 maxHeight: 102,
               ),
-              padding: EdgeInsets.fromLTRB(16, 16, 16, 16),
+              padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: lightGrey,
                 borderRadius: BorderRadius.only(
